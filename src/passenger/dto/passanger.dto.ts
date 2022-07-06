@@ -1,6 +1,6 @@
 import { IsEmail, IsNotEmpty, IsString } from "class-validator";
 
-export class PassangerDto {
+export class PassengerDto {
     @IsNotEmpty()
     @IsString()
     readonly name: string;

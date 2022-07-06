@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { PassangerService } from './passanger.service';
-import { PassangerController } from './passanger.controller';
+import { PassengerService } from './passenger.service';
+import { PassengerController } from './passenger.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { PASSENGER } from 'src/common/models/models';
 import { PassangerSchema } from './schema/passenger.schema';
@@ -16,7 +16,7 @@ import { PassangerSchema } from './schema/passenger.schema';
       }  
     ])
   ],
-  controllers: [PassangerController],
-  providers: [PassangerService]
+  controllers: [PassengerController],
+  providers: [PassengerService]
 })
-export class PassangerModule {}
+export class PassengerModule {}
