@@ -26,6 +26,7 @@ export class PassengerService {
 
   async update(id: string, passengerDto: PassengerDto): Promise<IPassenger> {
     const passenger = { ...passengerDto }
+    
     return await this.model.findByIdAndUpdate(id, passenger, { new: true })
   }
 
